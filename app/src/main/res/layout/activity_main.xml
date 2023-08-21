@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controlLayout"
+        android:contentDescription="Lista de caballos en carrera">
+
+        <LinearLayout
+            android:id="@+id/horseLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/horse1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse1" />
+
+            <ImageView
+                android:id="@+id/horse2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse2" />
+
+            <ImageView
+                android:id="@+id/horse3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse3" />
+
+            <ImageView
+                android:id="@+id/horse4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse4" />
+
+            <ImageView
+                android:id="@+id/horse5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse5" />
+
+            <ImageView
+                android:id="@+id/horse6"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse6" />
+
+            <ImageView
+                android:id="@+id/horse7"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse7" />
+
+            <ImageView
+                android:id="@+id/horse8"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse8" />
+
+            <ImageView
+                android:id="@+id/horse9"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse9" />
+
+            <ImageView
+                android:id="@+id/horse10"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/horse10" />
+            <Button
+                android:id="@+id/startRaceButton"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Iniciar Carrera" />
+
+            <Button
+                android:id="@+id/resumeRaceButton"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Reanudar Carrera" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/controlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/stopAllButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detener Todos" />
+
+        <EditText
+            android:id="@+id/horseNumberInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Número de caballo" />
+
+
+        <Button
+            android:id="@+id/stopSingleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detener Caballo" />
+
+    </LinearLayout>
+
+</RelativeLayout>
